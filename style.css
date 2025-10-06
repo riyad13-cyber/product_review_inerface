@@ -125,7 +125,17 @@ body p {
   border-radius: 8px;
   background-color: hsl(300, 43%, 22%);
   color: hsl(300, 24%, 96%);
+  position: relative;
 }
+
+.review__card:nth-child(2) {
+  top: 20px;
+}
+
+.review__card:nth-child(3) {
+  top: 40px;
+}
+
 .card__header {
   margin-bottom: 30px;
 }
