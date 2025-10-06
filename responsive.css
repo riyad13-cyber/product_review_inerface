@@ -48,6 +48,12 @@
 
   .review__card {
     padding: 20px;
+    position: static !important;
+  }
+
+  .review__card:nth-child(2),
+  .review__card:nth-child(3) {
+    top: 0 !important;
   }
 
   .card__header__info {
