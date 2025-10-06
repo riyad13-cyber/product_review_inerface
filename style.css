@@ -1,0 +1,163 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body styling start from here */
+
+body {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(303, 10%, 53%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body p {
+  line-height: 20px;
+}
+
+.background__svg {
+  position: relative;
+}
+
+.top__svg {
+  position: fixed;
+  top: 0;
+  left: -100px;
+}
+
+.bottom__svg {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+}
+
+#main__area {
+  width: 80%;
+  max-width: 1280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero__area {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: start;
+  z-index: 999;
+}
+
+.hero__area__left h1 {
+  font-size: 50px;
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+  padding-bottom: 20px;
+}
+
+.hero__area__left p {
+  font-size: 18px;
+  font-weight: 500;
+  color: hsl(302, 16%, 40%);
+  padding-bottom: 40px;
+}
+
+/* hero area right styling */
+
+.icon__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: hsl(300, 60%, 93%);
+  color: hsl(300, 43%, 22%);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  width: 100%;
+  position: relative;
+}
+
+.icon__body:nth-child(1) {
+  right: 60px;
+}
+
+.icon__body:nth-child(2) {
+  right: 30px;
+}
+
+.icon i {
+  color: rgb(233, 142, 37);
+}
+
+.icon__review {
+  font-weight: 700;
+}
+
+.icon__review:nth-child(2) {
+  margin-left: 15px;
+}
+
+/* review grid styling start from here */
+
+.rating__grid__area {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 20px;
+  margin-top: 30px;
+}
+
+.review__card {
+  padding: 25px 25px;
+  border-radius: 8px;
+  background-color: hsl(300, 43%, 22%);
+  color: hsl(300, 24%, 96%);
+}
+.card__header {
+  margin-bottom: 30px;
+}
+
+.card__header__info {
+  display: flex;
+  flex-direction: row; /*resposnsive*/
+}
+
+.card__header__description {
+  margin-left: 30px;
+  cursor: pointer;
+}
+.card__header__description h2 {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 5px;
+}
+
+.card__header__description h3 {
+  color: hsl(333, 80%, 67%);
+  font-weight: 500;
+  font-size: 16px;
+  display: block;
+}
+
+.card__image img {
+  border-radius: 50%;
+}
+
+/* all hover effects styling here */
+
+.card__header__description h3:hover {
+  text-decoration: underline;
+}
